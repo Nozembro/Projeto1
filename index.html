@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>NUMBER GUESS POSSIBILITY</title>
+</head>
+<body>
+    <h1 class="titulo">NUMBER GUESS POSSIBILITY</h1>
+    <section class="quadro">
+        <div class="cartao soma"><p>SOMA</p>
+            <div class="circulo" id="circuloJs1">
+                <div class="fill"></div>
+                <p class="porcentagem" id="porcentagem1">0%</p>
+            </div>
+        </div>
+        <div class="cartao"><p>SUBTRAÇÃO</p>
+            <div class="circulo" id="circuloJs2">
+                <div class="fill"></div>
+                <p class="porcentagem" id="porcentagem2">0%</p>
+            </div>
+        </div>
+        <div class="cartao"><p>MULTIPLICAÇÃO</p>
+            <div class="circulo" id="circuloJs3">
+                <div class="fill"></div>
+                <p class="porcentagem" id="porcentagem3">0%</p>
+            </div>
+        </div>
+        <div class="cartao divi"><p>DIVISÃO</p>
+            <div class="circulo" id="circuloJs4">
+                <div class="fill"></div>
+                <p class="porcentagem" id="porcentagem4">0%</p>
+            </div>
+        </div>
+    </section>
+    <section class="bloco_inferior">
+        <button class="botao" id="botaoResultado">
+            <span class="frente">
+                RESULTADO
+              </span>
+        </button>
+        <input class="input" type="text" maxlength="2" id="fillInput" placeholder="Escolha um número(até 99)">
+    </section>
+    <div class="descricao">
+        <p class="texto">"Number guess possibility" Calcula a<br> possibilidade de você chutar dois<br> números, menores do que o escolhido,<br> que ao serem colocados nas operações<br> acima resultam no numero escolhido.</p>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
